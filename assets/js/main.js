@@ -21,15 +21,24 @@
 const hamburger = document.querySelector("a>i");
 console.log(hamburger.classList)
 const hamburger_menu = document.getElementById("hamburger-menu")
-
-
-/* apertura menu */
 console.log(hamburger_menu.classList)
+
+const cross = document.getElementById("cross");
+console.log(cross.classList)
+
+
+/* apertura hamburger-menur */
 hamburger.addEventListener("click", function () {
     console.log('Apri hamburger-menu')
     hamburger_menu.style.display = "block"
 }
 )
+/* chiusura hamburger-menu*/
+
+cross.addEventListener("click", function () {
+    console.log('chiudi hamburger-menu')
+    hamburger_menu.style.display = "none"
+})
 
 
 
@@ -37,12 +46,6 @@ hamburger.addEventListener("click", function () {
 
 
 
-
-
-
-
-
-
-/* const cross = document.getElementsByClassName("close");
-cross.style.color = "red"
-console.log(cross.className) */
+/*
+const cross = document.querySelector("close");
+console.log(cross.classList) */
