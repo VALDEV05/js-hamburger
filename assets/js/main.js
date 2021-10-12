@@ -7,23 +7,29 @@
 */
 
 
-//quando clicco sul hamburger
-//mostra menu-hamburger
-//per chiuderlo clicca sulla croce
 
 /*  STRUMENTI
-        - selettori
-            -hamburger document.querySelector("selezione")
-
-
+- selettori
+-hamburger document.querySelector("selezione")
+- aggiunta di evento
+-element.addEventListener(event, function, useCapture)
+*/
+/* 
+    //quando clicco sul hamburger
+    //mostra menu-hamburger
+    //per chiuderlo clicca sulla croce
 */
 
+//selezione icona hamburger
 const hamburger = document.querySelector("a>i");
 console.log(hamburger.classList)
-const hamburger_menu = document.getElementById("hamburger-menu")
+
+//selezione hamburger-menu
+const hamburger_menu = document.querySelector(".hamburger-menu")
 console.log(hamburger_menu.classList)
 
-const cross = document.getElementById("cross");
+//selezione icona cross
+const cross = document.querySelector('.close > i');
 console.log(cross.classList)
 
 
@@ -34,18 +40,8 @@ hamburger.addEventListener("click", function () {
 }
 )
 /* chiusura hamburger-menu*/
-
 cross.addEventListener("click", function () {
     console.log('chiudi hamburger-menu')
     hamburger_menu.style.display = "none"
 })
 
-
-
-
-
-
-
-/*
-const cross = document.querySelector("close");
-console.log(cross.classList) */
